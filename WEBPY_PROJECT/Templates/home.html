@@ -1,0 +1,33 @@
+<br xmlns="http://www.w3.org/1999/html"/>
+<div>
+    $if session['user'] == None:
+        <h2 style="color:green;margin:30px">Hello SilverUniverse!</h2>
+    $else:
+        <div class="row">
+            <ul class="sidebar">
+                <li class="active"><a href="#" ><span class="ndi ndi-home"></span>Home Feed</a> </li>
+                <li ><a href="#" ><span class="ndi ndi-account-circle"></span>Profile</a> </li>
+                <li ><a href="#" ><span class="ndi ndi-email"></span>Messages</a> </li>
+                <li ><a href="#" ><span class="ndi ndi-google-circles-group"></span>Friends</a> </li>
+
+            </ul>
+
+        <div class="col-nd-6">
+        <div class="post-box">
+            <form id="post-activity">
+                <textarea name="content" class="post-input" placeholder="What's poppin $session['user']['name']?"></textarea>
+                <button id="post-button" class="btn btn-info btn-raised waves effect" type="submit"><span class="ndi ndi-send"></span>Post Feed </button>
+            </form>
+        </div>
+                 <div class="post-card">
+                     <div class="header">
+                          <div class="avatar"></div>
+                          <a href="/profile">Silver State</a>
+                     </div>
+                     <div class="content">
+                         Test Content
+                     </div>
+                 </div>
+        </div>
+        </div>
+</div>
